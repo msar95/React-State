@@ -1,9 +1,12 @@
 import React from "react";
+import { ImageChanger } from "./ImageChanger";
 
-export class App extends React.Component{
-    render () {
-        return(
-            <h1>Hello World</h1>
+export class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <ImageChanger />
+            </div>
         )
     };
 };
