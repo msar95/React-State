@@ -21,8 +21,8 @@ export class App extends React.Component {
     render() {
         return (
             <div>
-                <ImageChanger images = {images} interval = {3000} />
+                <ImageChanger images = {images} interval = {2000} />
             </div>
-        )
+        );
+        }
     };
-};

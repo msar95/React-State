@@ -28,7 +28,7 @@ export class ImageChanger extends React.Component {
     changeImage(){
         this.setState((state, props) => {
             return{
-                imageIndex: getNextIndex(props.images, state.imageIndex)
+                imageIndex: getNextIndex(props.images,state.imageIndex)
             }
         }
         )
@@ -37,6 +37,7 @@ export class ImageChanger extends React.Component {
     render() {
         const currentimage = this.props.images[this.state.imageIndex];
         return (
+            <h1>Image Changer</h1>,
             <img src={currentimage.src} alt={currentimage.alt}></img>
         );
     }
